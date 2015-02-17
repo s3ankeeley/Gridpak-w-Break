@@ -1,0 +1,266 @@
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+.col {
+  border: 0px solid transparent;
+  float: left;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+/* 1. 1 Column Grid 0px - 479px 
+----------------------------------------------------------------------------- 
+
+Span 1:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .col {
+    margin-left: 0%;
+    padding: 0 0.5%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  .span_1, .mediablock, .mediablock2, .header img {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%; } }
+
+/* 2. 3 Column Grid 480px - 959px 
+----------------------------------------------------------------------------- 
+
+Span 1:    33.3333333333%
+Span 2:    66.6666666667%
+Span 3:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .col {
+    margin-left: 0%;
+    padding: 0 0.5%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  .buttons{
+    height: 70px;
+    width: 70px;
+    border-radius: 75%;
+  }
+ 
+  .span_1, .mediablock, .buttons{
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 0%;
+    margin-left: 0%;
+    max-width: 100%; }
+
+  .span_2, .mediablock2, .logo img {
+    width: 65.2%;
+    border-left-width: 0;
+    padding: 0 0%;
+    margin-left: 0%; }
+
+  .span_3 {
+    margin-left: 0;
+    width: 100%; }
+
+  .wrapper {
+    width: 100%; } }
+
+/* 3. 6 Column Grid 960px - Infinity 
+----------------------------------------------------------------------------- 
+
+Span 1:    16.6666666667%
+Span 2:    33.3333333333%
+Span 3:    50.0%
+Span 4:    66.6666666667%
+Span 5:    83.3333333333%
+Span 6:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 960px) {
+  .col {
+    margin-left: 0%;
+    padding: 0 0.5%; }
+
+  /* --- Gridpak variables ---*/
+  .row .col:first-child {
+    margin-left: 0; }
+  
+ .buttons {
+  list-style-type: none;
+  float:right;
+  display: flex;
+  margin-top: 75px; 
+
+       }
+
+ .uno, .dos, .tres, .catorce{
+    height: 70px;
+    width: 70px;
+    border-radius: 75%;
+    text-align: center;
+    vertical-align: middle;
+    position:relative;
+    color: #ffffff; 
+    margin-right: 255px; 
+  }
+
+  .span_1 {
+    width: 16.66667%;
+    border-left-width: 0;
+    padding: 0 0 0% 0%;
+    margin-left: 0%;
+    max-width: 100%; }
+
+  .span_2, .mediablock , .buttons {
+    width: 32.33333%;
+    border-left-width: 0;
+    padding: 0 0 0% 0%;
+    margin-left: 0%; }
+
+  .span_3, .logo img{
+    width: 50%;
+    border-left-width: 0;
+    padding: 0 0 0% 0%;
+    margin-left: 0%;
+    max-width: 100%; }
+
+  .span_4, .mediablock2 {
+    width: 65.6%;
+    border-left-width: 0;
+    padding: 0 0 0% 0%;
+    margin-left: 0%;
+    max-width: 100%; }
+
+  .span_5 {
+    width: 83.33333%;
+    border-left-width: 0;
+    padding: 0 0 0% 0%;
+    margin-left: 0%; }
+
+  .span_6 , .spacer{
+    margin-left: 0;
+    width: 100%; }
+
+  .wrapper {
+    width: 960px;
+    margin: auto;
+     }
+
+    .spacer{
+      height:1%;
+    }
+
+  .logo img {
+    max-width: 100%; 
+    } }
+.m1, .m4, .m7 {
+  background-color: #D91E18;
+  display: inline-block;
+  height: 300px; }
+
+.m2, .m5, .m6, .m8 {
+  background-color: #65C6BB;
+  display: inline-block;
+  height: 300px; }
+
+.m3, .m6 {
+  background-color: #52B3D9;
+  display: inline-block;
+  height: 300px; }
+
+.m1, .m2, .m3 {
+  margin-top: 1%; }
+
+.row1 div, .row2 div, .row3 div {
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 0.5%;
+  margin-bottom: 0.5%; }
+
+
+/*
+  -webkit-box-shadow: inset 0px 0px 0px 2px #C4DF9B;
+  -moz-box-shadow: inset 0px 0px 0px 2px #C4DF9B;
+  box-shadow: inset 0px 0px 0px 2px #C4DF9B;*/
+
+  h2{font-weight: bold;}
+
+h2{
+  font-size:18px;
+}
+a{
+  text-decoration: none;
+}
+
+.imagez{
+  max-width:100%;
+}
+
+/*.buttons {
+  list-style-type: none;
+  float:right;
+  display: flex;
+  margin-top: 75px; 
+
+       }*/
+  .uno {
+    background: #C4CBA5;
+     }
+    .uno:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #727A4A;
+      -moz-box-shadow: inset 0px 0px 0px 4px #727A4A;
+      box-shadow: inset 0px 0px 0px 4px #727A4A; }
+ .dos {
+    background: #B5CEE6;
+     }
+   .dos:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #6B9FD2;
+      -moz-box-shadow: inset 0px 0px 0px 4px #6B9FD2;
+      box-shadow: inset 0px 0px 0px 4px #6B9FD2; }
+  .tres {
+    background: #D8AED2; 
+  }
+   .tres:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #B15CA7;
+      -moz-box-shadow: inset 0px 0px 0px 4px #B15CA7;
+      box-shadow: inset 0px 0px 0px 4px #B15CA7; }
+  .catorce {
+    background: #FAC2BB;
+    }
+     .catorce:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #F15B46;
+      -moz-box-shadow: inset 0px 0px 0px 4px #F15B46;
+      box-shadow: inset 0px 0px 0px 4px #F15B46; }
+  
+
+/*  .uno, .dos, .tres, .catorce{
+    height: 70px;
+    width: 70px;
+    border-radius: 75%;
+    text-align: center;
+    vertical-align: middle;
+    position:relative;
+    color: #ffffff; 
+    margin-right: 255px; 
+  }*/
+
+/*.header{
+  display: flex;
+}*/

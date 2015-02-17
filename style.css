@@ -1,0 +1,64 @@
+h2{font-weight: bold;}
+
+h2{
+	font-size:18px;
+}
+a{
+	text-decoration: none;
+}
+
+.imagez{
+	max-width:100%;
+}
+
+.buttons {
+  list-style-type: none;
+  float:right;
+  display: flex;
+  margin-top: 75px;	
+
+	     }
+  .uno {
+    background: #C4CBA5;
+     }
+    .uno:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #727A4A;
+      -moz-box-shadow: inset 0px 0px 0px 4px #727A4A;
+      box-shadow: inset 0px 0px 0px 4px #727A4A; }
+ .dos {
+    background: #B5CEE6;
+     }
+   .dos:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #6B9FD2;
+      -moz-box-shadow: inset 0px 0px 0px 4px #6B9FD2;
+      box-shadow: inset 0px 0px 0px 4px #6B9FD2; }
+  .tres {
+    background: #D8AED2; 
+	}
+   .tres:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #B15CA7;
+      -moz-box-shadow: inset 0px 0px 0px 4px #B15CA7;
+      box-shadow: inset 0px 0px 0px 4px #B15CA7; }
+  .catorce {
+    background: #FAC2BB;
+    }
+     .catorce:hover {
+      -webkit-box-shadow: inset 0px 0px 0px 4px #F15B46;
+      -moz-box-shadow: inset 0px 0px 0px 4px #F15B46;
+      box-shadow: inset 0px 0px 0px 4px #F15B46; }
+	
+
+	.uno, .dos, .tres, .catorce{
+		height: 70px;
+		width: 70px;
+		border-radius: 75%;
+		text-align: center;
+		vertical-align: middle;
+		position:relative;
+		color: #ffffff; 
+		margin-right: 255px; 
+	}
+
+/*.header{
+	display: flex;
+}*/

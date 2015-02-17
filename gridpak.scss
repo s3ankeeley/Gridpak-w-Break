@@ -1,0 +1,236 @@
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+/* Reusable column setup */
+
+/* Color variables */
+$aqua:#A2DED0;
+$silver-tree:#68C3A3;
+$downy:#65C6BB;
+
+$thunderbird:#D91E18;
+$chestnut-rose:#D24D57;
+$flamingo:#EF4836;
+
+$royal-blue:#4183D7;
+$shakespere:#52B3D9;
+$pastel-green:#C4DF9B;
+
+@mixin col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+.col {
+   @include col;
+}
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+    $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+    width:($one_col * $num) + ($gutter_pc * ($num - 1));
+    border-left-width:$gutter_px;
+    padding:$padding;
+    margin-left:$gutter_pc;
+}
+
+@mixin span_first {
+    margin-left:0;
+}
+ 
+
+    /* 1. 1 Column Grid 0px - 479px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 0px) and (max-width: 479px) {
+        
+        .col {
+            margin-left:0%;
+            padding:0 0.5%;
+            
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 1;
+        $padding: 0 0%;
+        $gutter_px: 0;
+        $gutter_pc: 0%;
+        
+
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        
+        */
+        .span_1, .mediablock , .mediablock2, .logo img{
+            @include span_first;
+            width:100%;
+            max-width: 100%;
+
+        }
+    }
+
+    /* 2. 3 Column Grid 480px - 959px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    33.3333333333%
+    Span 2:    66.6666666667%
+    Span 3:    100%
+    
+    ----------------------------------------------------------------------------- */
+	@media screen and (min-width: 480px) and (max-width: 959px) {
+        
+      .col {
+            margin-left:0%;
+            padding:0 0.5%;
+           
+        }
+        
+        /* --- Gridpak variables ---*/
+        $max_columns: 3;
+        $padding: 0 0%;
+        $gutter_px: 0;
+        $gutter_pc: 0%;
+        
+
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        
+        .span_1 , .mediablock, .logo img{
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+            max-width: 100%;
+        }
+        .span_2 ,.mediablock2{
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span_first;
+            width:100%;
+        }
+        .wrapper{
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+
+    /* 3. 6 Column Grid 960px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    16.6666666667%
+    Span 2:    33.3333333333%
+    Span 3:    50.0%
+    Span 4:    66.6666666667%
+    Span 5:    83.3333333333%
+    Span 6:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 960px) {
+        
+        .col {
+            margin-left:0%;
+            padding:0 0.5%;
+           
+        }
+
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 6;
+        $padding: 0 0 0% 0%;
+        $gutter_px: 0;
+        $gutter_pc: 0%;
+        
+
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        
+        .span_1{
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+            max-width: 100%;
+        }
+        .span_2, .mediablock ,.logo img{
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3{
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+            max-width: 100%;
+        }
+        .span_4, .mediablock2 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_6 {
+            @include span_first;
+            width:100%;
+        }
+
+        .wrapper{
+            width: 960px;
+            margin: auto;  
+            border: 1px solid black;
+        }
+        .logo img{
+            max-width: 100%;
+        }
+    }
+ 
+.m1, .m4, .m7{
+    background-color: $thunderbird;
+    display: inline-block; 
+    height: 300px;
+}
+.m2, .m5, .m6, .m8{
+    background-color: $downy;
+    display: inline-block; 
+    height: 300px;
+}
+.m3, .m6{
+    background-color: $shakespere;
+    display: inline-block; 
+    height: 300px;
+} 
+
+.m1, .m2, .m3{
+  margin-top: 1%;
+}
+
+.row1 div, .row2 div , .row3 div{
+    -webkit-box-shadow: inset 0px 0px 0px 2px $pastel-green;
+    -moz-box-shadow: inset 0px 0px 0px 2px $pastel-green;
+    box-shadow: inset 0px 0px 0px 2px $pastel-green;
+    font-size: 10px;
+    font-family: helvetica;
+    text-align: center;
+    vertical-align: middle;
+}
